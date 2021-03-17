@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<script>
+	function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+		}
+	function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+		}
+</script>
+
+	<title>Main page</title>
+	<style type="text/css">
+		@import url(design.css);
+		@import url(index.css);
+		@import url(nav.css);
+	
+	article{
+		background-color: white;
+		font-size: 30px;
+		text-align:justify;
+		color: black;
+		text-align:center;
+	}
+	 
+	
+	</style>
+</head>
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+
+   
+<div class="page">
+<div id="mySidenav" class="sidenav">
+  <a href="opinion.html" id="opinion">My opinion</a>
+  <a href="exercise.html" id="exercising">Exercising</a>
+  <a href="baking.html" id="baking">Baking</a>
+  <a href="netflix.html" id="netflix">Series</a>
+</div>
+
+<header> <u><b> My COVID-19 experience </b></u> </header>
+	
+	<article>
+		Welcome to the main page of my blog!<br>
+		On the left side of this page you can find four side navigation buttons, click on them, to visit the pages.
+		
+	</article>
+	
+
+	
+</div>
+
+</body>
+</html>

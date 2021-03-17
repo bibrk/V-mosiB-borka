@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>My opinion</title>
+	<style type="text/css">
+		@import url(layout.css);
+		@import url(design.css);
+		@import url(base.css);
+		@import url(image.css);
+ 
+	header {
+		padding: 30px;
+	}
+	 
+	</style>
+</head>
+<body>
+
+
+<a href="index.html" class="previous">&laquo; Back to the main page</a>
+   
+<div class="page">
+<header> <b> My opinion on this current situation </b> </header>
+
+	<section>
+
+			<p> <em>
+		Personally, i would've never thought that some time there'd be a pandemic. I find it kind of unbelievable that some illness was able to "travel the world", although i know there's a huge amount of people who travel from country to country regularly (because their work requires it, or just because they like travelling, and have the time or money to do it).</p>
+		<p> Firstly, when i got to know that from now on everything's closed, and everyone should stay home, i was really shocked and anxious. I couldn't imagine life like this, and i was so scared, that many people will die.</p>
+		<p> I work at a bar, and i normally go to the gym three times a week, so <span span style="color:red"> my life has totally stopped </span>, I had to stop going to work, going to the gym, going to school, and i also couldn't attend any parties, which doesn't sound like something I should complain about, but it was a way to relieve stress for me. After like a month I got used to staying home so much, that I didn't want to leave home anymore, and it got really difficult for me to even go buy something to eat. I realised that I have to stop being too comfortable doing nothing, and I have to start meeting my friends, going for a walk every day, and also exercising at home. </p>
+		<p> Almost two weeks ago I met my best friend, and some of my friends from uni, I started working out again a few days ago, and I can't wait for this pandemic to end. Some times it really hard to stay strong, because we don't exactly know when life will be normal again, but we have to be patient. </p>
+				</em>
+		
+	</section>
+	
+	<article>
+	
+	<img id="myImg" src="health.jpg" width="250" height="277" alt="Health" style="margin:30px 0px">
+	<p><cite>Mind your health</cite></p></a>
+
+	<div id="myModal" class="modal">
+
+	<span class="close">&times;</span>
+
+	<img class="modal-content" id="img01">
+	
+	<div id="caption"></div>
+	</div>
+		
+	</article>
+	
+	
+	
+	
+	<footer>
+		@ENVQPK
+	
+	<script>
+	
+
+	var modal = document.getElementById("myModal");
+
+	var img = document.getElementById("myImg");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		captionText.innerHTML = this.alt;
+		}
+
+
+	var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function() {
+	modal.style.display = "none";
+	}
+	
+	</script>
+	
+	</footer>
+	
+</div>
+
+</body>
+</html>

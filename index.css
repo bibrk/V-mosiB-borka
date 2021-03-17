@@ -1,0 +1,59 @@
+html,body{height: 100%;}
+body{
+	 
+		background-image: url('covid.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+		
+div.page>header {
+		grid-area:head;
+		padding: 62px;
+		font-size: 50px;
+		text-align: center;
+		color: white;
+}
+		
+	}
+	
+div.page>article{
+		background-color: white;
+		font-size: 30px;
+		text-align:justify;
+		color: white;
+		text-align:center;
+	}
+
+div.page>nav{
+		grid-area:menu;
+	}
+	
+div.page>section{
+		grid-area:cont;
+		text-align: justify;
+		font-size: 105%;
+	
+	}
+		
+div.page>section p{
+		padding-left: 80px;
+	}
+
+div.page>footer{
+		grid-area:foot;
+	}
+	
+div.page{
+	width: 900px;
+	margin:0 auto;
+	display: grid;
+	grid-template-areas: 
+		'head head'
+		'menu cont'
+		'foot foot'
+	;
+	grid-template-rows: 150px auto 200px;
+	grid-template-columns: 0px;
+	}
+	
